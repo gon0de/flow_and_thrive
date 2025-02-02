@@ -1,0 +1,29 @@
+name: flow_and_thrive
+description: A mindful productivity app with a subtle Iyashikei aesthetic for Android and iOS.
+publish_to: "none" # This is a private project.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.0.0
+  firebase_auth: ^4.0.0
+  cloud_firestore: ^4.0.0
+  firebase_analytics: ^10.0.0
+  lottie: ^2.2.0
+  google_fonts: ^3.0.1
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
