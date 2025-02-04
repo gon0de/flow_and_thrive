@@ -13,6 +13,8 @@ Future<void> main() async {
 
 /// The main application widget.
 class FlowAndThriveApp extends StatelessWidget {
+  const FlowAndThriveApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -42,6 +44,8 @@ class FlowAndThriveApp extends StatelessWidget {
 
 /// OnboardingScreen: Welcomes the user and directs them to the HomeScreen.
 class OnboardingScreen extends StatelessWidget {
+  const OnboardingScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,6 +64,8 @@ class OnboardingScreen extends StatelessWidget {
 
 /// HomeScreen: Acts as the main dashboard with navigation buttons.
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -94,7 +100,9 @@ class NavigationButton extends StatelessWidget {
   final String label;
   final String routeName;
 
-  NavigationButton({required this.label, required this.routeName});
+  const NavigationButton(
+      {Key? key, required this.label, required this.routeName})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -115,6 +123,8 @@ class NavigationButton extends StatelessWidget {
 
 /// TaskManagerScreen: Allows users to add tasks and view a list.
 class TaskManagerScreen extends StatefulWidget {
+  const TaskManagerScreen({Key? key}) : super(key: key);
+
   @override
   _TaskManagerScreenState createState() => _TaskManagerScreenState();
 }
@@ -179,6 +189,8 @@ class _TaskManagerScreenState extends State<TaskManagerScreen> {
 
 /// WellnessScreen: Provides a guided breathing exercise with a gentle animation.
 class WellnessScreen extends StatefulWidget {
+  const WellnessScreen({Key? key}) : super(key: key);
+
   @override
   _WellnessScreenState createState() => _WellnessScreenState();
 }
@@ -239,6 +251,8 @@ class _WellnessScreenState extends State<WellnessScreen>
 
 /// PremiumScreen: Showcases premium features and upsells the subscription.
 class PremiumScreen extends StatelessWidget {
+  const PremiumScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
